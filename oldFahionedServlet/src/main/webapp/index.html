@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Penalty</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="penaltyForm" id="penaltyForm">
+            <p>Фамилия: <input type="text" size="25" id="lastName"></p>
+            <p>Имя: <input type="text" size="25" id="firstName"></p>
+            <p>Отчество/Второе имя: <input type="text" size="25" id="middleName"></p>
+            <p>Гос. номер авто: <input type="text" size="25" id="stateNumber"></p>
+            <p>
+                <button class="submitButton" onclick="onPenaltyClick()">Найти штрафы</button>
+                <button class="submitButton" onclick="flushForm()">Очистить</button>
+            </p>
+        </div>
+        <div class="statisticForm" id="statisticForm">
+            <p>Найти <input type="number" min="1" max="100" id="statisticCount"> популярных штрафов</p>
+            <button class="submitButton" onclick="onStatisticClick()">Найти популярные штрафы</button>
+        </div>
+        <div class="tableContainer">
+            <table id="table" class="table"></table>
+        </div>
+    </body>
+</html>

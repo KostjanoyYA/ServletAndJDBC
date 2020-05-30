@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '3.4.1'
+    runtime group: 'org.postgresql', name: 'postgresql', version: '42.2.9'
+
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.9.8'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.1'
+
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.26'
+    runtime group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'    
+}

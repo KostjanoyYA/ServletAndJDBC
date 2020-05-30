@@ -1,0 +1,77 @@
+body {
+    background-color: #c5e3ee;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+button {
+    width: 49%;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+th {
+    background-color: brown;
+    color: azure;
+}
+
+th, td {
+    border-bottom: 2px navy solid;
+    border-right: 2px navy solid;
+}
+
+.container > * {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.penaltyForm {
+    position: absolute;
+    left: 7%;
+    width: 750px;
+}
+
+.penaltyForm input {
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+}
+
+.submitButton {
+    position: relative;
+    right: 0;
+}
+
+.statisticForm {
+    position: absolute;
+    right: 7%;
+    width: 750px;
+}
+
+.statisticForm input {
+    font-size: 30px;
+}
+
+.tableContainer {
+    position: absolute;
+    top: 400px;
+    margin: 20px;
+}
+
+.table {
+    visibility: hidden;
+    border-top: 2px navy solid;
+    border-left: 2px navy solid;
+}
+
+.error {
+    color: darkred;
+}
+
+
